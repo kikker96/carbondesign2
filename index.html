@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carbon Design — Web Agency Italiana</title>
+  <meta name="description" content="Carbon Design è un'agenzia web italiana che realizza siti premium in una settimana." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script async src="https://tally.so/widgets/embed.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">CARBON DESIGN</div>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="it">IT</button>
+        <span class="lang-sep">/</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <div class="nav-links">
+        <a href="#servizi" data-it="Servizi" data-en="Services">Servizi</a>
+        <a href="#perche-noi" data-it="Perché Noi" data-en="Why Us">Perché Noi</a>
+        <a href="#processo" data-it="Processo" data-en="Process">Processo</a>
+        <a href="#contatto" data-it="Contatto" data-en="Contact">Contatto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-sticky">
+      <video
+        id="hero-video"
+        src="hero-opt.mp4"
+        muted
+        playsinline
+        preload="auto"
+      ></video>
+      <div class="hero-overlay"></div>
+      <div class="scroll-hint">
+        <span data-it="SCORRI" data-en="SCROLL">SCORRI</span>
+        <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19,12 12,19 5,12"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERO TEXT SECTION -->
+  <section id="hero-text">
+    <canvas id="particles-canvas"></canvas>
+    <h1
+      class="hero-headline"
+      data-it="IL TUO SITO WEB.<br>IN UNA SETTIMANA."
+      data-en="YOUR WEBSITE.<br>IN ONE WEEK."
+    >IL TUO SITO WEB.<br>IN UNA SETTIMANA.</h1>
+    <p
+      class="hero-subline"
+      data-it="Design su misura. Qualità premium. Consegna rapida."
+      data-en="Custom design. Premium quality. Fast delivery."
+    >
+      Design su misura. Qualità premium. Consegna rapida.
+    </p>
+    <button
+      class="hero-cta"
+      data-tally-open="jaJZoJ"
+      data-tally-layout="modal"
+      data-tally-emoji-text="👋"
+      data-tally-emoji-animation="wave"
+      data-tally-auto-close="1000"
+      data-tally-form-events-forwarding="1"
+      data-it="PRENOTA UNA CALL"
+      data-en="BOOK A CALL"
+    >
+      PRENOTA UNA CALL
+    </button>
+  </section>
+
+  <!-- SERVIZI SECTION -->
+  <section id="servizi">
+    <div class="section-inner">
+      <h2
+        class="section-title"
+        data-it="COSA COSTRUIAMO"
+        data-en="WHAT WE BUILD"
+      >
+        COSA COSTRUIAMO
+      </h2>
+      <div class="section-divider"></div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="card-top">
+            <span class="card-num">01</span>
+          </div>
+          <h3
+            class="card-title"
+            data-it="Sito Vetrina"
+            data-en="Showcase Website"
+          >Sito Vetrina</h3>
+          <p
+            class="card-desc"
+            data-it="Una presenza online elegante e professionale che racconta il tuo brand, conquista il visitatore e trasforma i click in clienti reali."
+            data-en="An elegant and professional online presence that tells your brand story, captivates visitors, and turns clicks into real customers."
+          >
+            Una presenza online elegante e professionale che racconta il tuo brand, conquista il visitatore e trasforma i click in clienti reali.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="card-top">
+            <span class="card-num">02</span>
+          </div>
+          <h3
+            class="card-title"
+            data-it="E-Commerce"
+            data-en="E-Commerce"
+          >E-Commerce</h3>
+          <p
+            class="card-desc"
+            data-it="Negozi digitali ad alte prestazioni: catalogo prodotti, pagamenti sicuri e un'esperienza d'acquisto che fidelizza i clienti."
+            data-en="High-performance digital stores: product catalog, secure payments, and a shopping experience that builds customer loyalty."
+          >
+            Negozi digitali ad alte prestazioni: catalogo prodotti, pagamenti sicuri e un'esperienza d'acquisto che fidelizza i clienti.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="card-top">
+            <span class="card-num">03</span>
+          </div>
+          <h3
+            class="card-title"
+            data-it="Landing Page"
+            data-en="Landing Page"
+          >Landing Page</h3>
+          <p
+            class="card-desc"
+            data-it="Pagine ad alta conversione progettate per campagne, lanci di prodotto e lead generation. Ogni elemento è ottimizzato per convertire."
+            data-en="High-conversion pages designed for campaigns, product launches, and lead generation. Every element optimized to convert."
+          >
+            Pagine ad alta conversione progettate per campagne, lanci di prodotto e lead generation. Ogni elemento è ottimizzato per convertire.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PERCHE NOI SECTION -->
+  <section id="perche-noi">
+
+    <!-- Phase 1: scroll-scrubbed video -->
+    <div id="perche-video-scrub">
+      <div class="perche-sticky">
+        <video
+          id="ambient-video"
+          src="ambient-opt.mp4"
+          muted
+          playsinline
+          preload="auto"
+        ></video>
+        <div class="perche-video-overlay"></div>
+      </div>
+    </div>
+
+    <!-- Phase 2: content reveal -->
+    <div id="perche-content">
+      <div
+        class="section-label"
+        data-it="PERCHÉ SCEGLIERCI"
+        data-en="WHY CHOOSE US"
+      >PERCHÉ SCEGLIERCI</div>
+      <div class="values-grid">
+
+        <div class="value-card">
+          <div class="value-prop">
+            <div class="value-icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="14" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M18 10V18L23 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="value-title" data-it="UNA SETTIMANA" data-en="ONE WEEK">UNA SETTIMANA</h3>
+            <p
+              class="value-desc"
+              data-it="Dal brief alla consegna in 7 giorni. Nessuna attesa infinita, nessun ritardo: il tuo sito online quando ne hai bisogno."
+              data-en="From brief to delivery in 7 days. No endless waiting, no delays: your site live when you need it."
+            >
+              Dal brief alla consegna in 7 giorni. Nessuna attesa infinita, nessun ritardo: il tuo sito online quando ne hai bisogno.
+            </p>
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-prop">
+            <div class="value-icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 4L22.5 13.5L33 15L25.5 22.5L27 33L18 28L9 33L10.5 22.5L3 15L13.5 13.5L18 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="value-title" data-it="QUALITÀ PREMIUM" data-en="PREMIUM QUALITY">QUALITÀ PREMIUM</h3>
+            <p
+              class="value-desc"
+              data-it="Design curato nei minimi dettagli, codice pulito e performante. Ogni pixel è pensato per trasmettere professionalità e autorevolezza."
+              data-en="Design refined to the last detail, clean and performant code. Every pixel crafted to convey professionalism and authority."
+            >
+              Design curato nei minimi dettagli, codice pulito e performante. Ogni pixel è pensato per trasmettere professionalità e autorevolezza.
+            </p>
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-prop">
+            <div class="value-icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="10" width="28" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 10V8C12 5.79 13.79 4 16 4H20C22.21 4 24 5.79 24 8V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M13 20H23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M13 24H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="value-title" data-it="PREZZO ACCESSIBILE" data-en="ACCESSIBLE PRICE">PREZZO ACCESSIBILE</h3>
+            <p
+              class="value-desc"
+              data-it="Qualità da grande agenzia a prezzi pensati per PMI e professionisti. Investimento chiaro, nessuna sorpresa in fattura."
+              data-en="Big-agency quality at prices designed for SMEs and professionals. Clear investment, no invoice surprises."
+            >
+              Qualità da grande agenzia a prezzi pensati per PMI e professionisti. Investimento chiaro, nessuna sorpresa in fattura.
+            </p>
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-prop">
+            <div class="value-icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 4C10.27 4 4 10.27 4 18C4 25.73 10.27 32 18 32C25.73 32 32 25.73 32 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M24 4L32 4L32 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 16L32 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="value-title" data-it="100% SU MISURA" data-en="100% CUSTOM">100% SU MISURA</h3>
+            <p
+              class="value-desc"
+              data-it="Niente template prefabbricati. Ogni progetto nasce da zero per rispecchiare l'identità unica del tuo brand e i tuoi obiettivi."
+              data-en="No pre-built templates. Every project built from scratch to reflect your brand's unique identity and goals."
+            >
+              Niente template prefabbricati. Ogni progetto nasce da zero per rispecchiare l'identità unica del tuo brand e i tuoi obiettivi.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PROCESSO SECTION -->
+  <section id="processo">
+    <div
+      class="section-label"
+      data-it="COME LAVORIAMO"
+      data-en="HOW WE WORK"
+    >COME LAVORIAMO</div>
+    <div class="processo-container">
+      <svg class="processo-line-svg" id="processo-svg" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="neonGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#4444ff" stop-opacity="0.8"/>
+            <stop offset="50%" stop-color="#8844ff" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#ff44aa" stop-opacity="0.8"/>
+          </linearGradient>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+            <feMerge>
+              <feMergeNode in="coloredBlur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <line
+          id="neon-line"
+          x1="50%" y1="0"
+          x2="50%" y2="100%"
+          stroke="url(#neonGrad)"
+          stroke-width="1"
+          filter="url(#glow)"
+          stroke-dasharray="1000"
+          stroke-dashoffset="1000"
+        />
+      </svg>
+      <div class="process-steps">
+
+        <div class="process-step" data-step="01">
+          <div class="step-node"></div>
+          <span class="step-num">01</span>
+          <div class="process-card">
+            <h3
+              class="step-title"
+              data-it="BRIEF"
+              data-en="BRIEF"
+            >BRIEF</h3>
+            <p
+              class="step-desc"
+              data-it="Capiamo la tua attività, i tuoi obiettivi e il tuo pubblico. Nessun template — partiamo da te."
+              data-en="We understand your business, goals and audience. No templates — we start from you."
+            >Capiamo la tua attività, i tuoi obiettivi e il tuo pubblico. Nessun template — partiamo da te.</p>
+          </div>
+        </div>
+
+        <div class="process-step" data-step="02">
+          <div class="step-node"></div>
+          <span class="step-num">02</span>
+          <div class="process-card">
+            <h3
+              class="step-title"
+              data-it="DESIGN"
+              data-en="DESIGN"
+            >DESIGN</h3>
+            <p
+              class="step-desc"
+              data-it="Progettiamo ogni pagina nei minimi dettagli. Tu vedi, approvi e richiedi modifiche prima che iniziamo a costruire."
+              data-en="We design every page in detail. You see, approve and request changes before we build."
+            >Progettiamo ogni pagina nei minimi dettagli. Tu vedi, approvi e richiedi modifiche prima che iniziamo a costruire.</p>
+          </div>
+        </div>
+
+        <div class="process-step" data-step="03">
+          <div class="step-node"></div>
+          <span class="step-num">03</span>
+          <div class="process-card">
+            <h3
+              class="step-title"
+              data-it="SVILUPPO"
+              data-en="DEVELOPMENT"
+            >SVILUPPO</h3>
+            <p
+              class="step-desc"
+              data-it="Costruiamo il tuo sito veloce, mobile-first e ottimizzato per i motori di ricerca. Codice pulito, zero dipendenze inutili."
+              data-en="We build your site fast, mobile-first and SEO optimised. Clean code, zero bloat."
+            >Costruiamo il tuo sito veloce, mobile-first e ottimizzato per i motori di ricerca. Codice pulito, zero dipendenze inutili.</p>
+          </div>
+        </div>
+
+        <div class="process-step" data-step="04">
+          <div class="step-node"></div>
+          <span class="step-num">04</span>
+          <div class="process-card">
+            <h3
+              class="step-title"
+              data-it="CONSEGNA"
+              data-en="DELIVERY"
+            >CONSEGNA</h3>
+            <p
+              class="step-desc"
+              data-it="Il tuo sito va live. In una settimana dalla firma. Ti consegniamo tutto: dominio, hosting, istruzioni."
+              data-en="Your site goes live. One week from signing. We hand over everything: domain, hosting, instructions."
+            >Il tuo sito va live. In una settimana dalla firma. Ti consegniamo tutto: dominio, hosting, istruzioni.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATTO SECTION -->
+  <section id="contatto">
+    <div class="section-inner contatto-inner">
+      <h2
+        class="section-title"
+        data-it="PRONTO A PARTIRE?"
+        data-en="READY TO START?"
+      >
+        PRONTO A PARTIRE?
+      </h2>
+      <p
+        class="contatto-sub"
+        data-it="Scrivici oggi e ricevi un preventivo gratuito entro 24 ore. Il tuo sito potrebbe essere online già la prossima settimana."
+        data-en="Write us today and receive a free quote within 24 hours. Your site could be live as early as next week."
+      >
+        Scrivici oggi e ricevi un preventivo gratuito entro 24 ore. Il tuo sito potrebbe essere online già la prossima settimana.
+      </p>
+      <button
+        class="contact-cta-btn"
+        data-tally-open="jaJZoJ"
+        data-tally-layout="modal"
+        data-tally-emoji-text="👋"
+        data-tally-emoji-animation="wave"
+        data-tally-auto-close="1000"
+        data-tally-form-events-forwarding="1"
+        data-it="PRENOTA UNA CALL"
+        data-en="BOOK A CALL"
+      >PRENOTA UNA CALL</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <p class="footer-copy">
+      &copy; <span id="footer-year">2024</span> Carbon Design.
+      <span data-it="Tutti i diritti riservati." data-en="All rights reserved.">Tutti i diritti riservati.</span>
+    </p>
+    <div class="footer-contact">
+      <a href="mailto:Thetaofuparrot@gmail.com">Thetaofuparrot@gmail.com</a>
+      <span>+31 613 112 459</span>
+      <span>Via Vignola 75 — Olbia, Sardegna</span>
+    </div>
+  </footer>
+
+</body>
+</html>
